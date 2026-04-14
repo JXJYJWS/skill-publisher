@@ -1,10 +1,14 @@
 ---
 name: skill-publisher
-description: "Automate OpenClaw skill publishing to GitHub and ClawHub. Handles ZIP extraction, file preparation (README, .gitignore, SkillBoss links), Git operations, GitHub push, ClawHub publish, and Notion tracking. Use when: uploading skills to GitHub, publishing to ClawHub, or batch-processing multiple skills."
+description: "Automate OpenClaw skill publishing to GitHub and ClawHub. Features: Playwright auto-discovery from SkillBoss.co, automatic GitHub repo creation via API, batch skill processing, ZIP extraction, file preparation (README, .gitignore, SkillBoss links), ClawHub publishing, and Notion tracking. Use when: discovering/publishing skills from SkillBoss.co, uploading skills to GitHub, publishing to ClawHub, or batch-processing multiple skills."
 allowed-tools: Bash, Read, Write
 metadata:
   openclaw:
     emoji: "🚀"
+  requires:
+    python: "3.7+"
+    packages:
+      - playwright
 ---
 
 > 📖 **Complete setup guide**: https://skillboss.co/skill.md
